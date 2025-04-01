@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Sumit Kumar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7fafc;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      #about {
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        margin: 20px auto;
+        max-width: 800px;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      #about:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        color: #1a202c;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #4a5568;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #3182ce;
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn:hover {
+        background-color: #2b6cb0;
+      }
+
+      .container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .about-text {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        color: #4a5568;
+      }
+
+      /* 3D Effect */
+      #about {
+        perspective: 1000px;
+      }
+
+      #about p {
+        transform-style: preserve-3d;
+        animation: rotateText 5s infinite;
+      }
+
+      @keyframes rotateText {
+        0% {
+          transform: rotateY(0deg);
+        }
+        100% {
+          transform: rotateY(360deg);
+        }
+      }
+
+      #about p {
+        transform-style: preserve-3d;
+        animation: rotateText 10s infinite ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="about" class="p-10 bg-white shadow-md rounded-lg mx-5 my-10">
+      <h2 class="text-2xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-700">
+        Passionate and dedicated Computer Science student with expertise in
+        programming, driven to solve challenging problems that enhance user
+        satisfaction.
+      </p>
+      <p class="text-gray-700 mt-4">
+        I specialize in <strong>C++, Python</strong>, <strong>OOPs</strong>,
+        <strong>DSA</strong>, and web technologies. I also have experience with
+        <strong>Node.js</strong>, <strong>React</strong>,
+        <strong>MongoDB</strong>, and more.
+      </p>
+
+      <!-- Button to go to Home -->
+      <div class="container">
+        <a href="index.html" class="btn" style="color: red;">Go to Home Page</a>
+      </div>
+    </section>
+  </body>
+</html>
