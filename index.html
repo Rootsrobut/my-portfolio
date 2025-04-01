@@ -10,21 +10,32 @@
   <style>
     /* Slow Spin Effect */
     @keyframes glow {
-        0% { text-shadow: 0 0 10px #facc15, 0 0 20px #facc15; }
-        50% { text-shadow: 0 0 20px #facc15, 0 0 40px #facc15; }
-        100% { text-shadow: 0 0 10px #facc15, 0 0 20px #facc15; }
+      0% {
+        text-shadow: 0 0 10px #facc15, 0 0 20px #facc15;
+      }
+      50% {
+        text-shadow: 0 0 20px #facc15, 0 0 40px #facc15;
+      }
+      100% {
+        text-shadow: 0 0 10px #facc15, 0 0 20px #facc15;
+      }
     }
     .animate-glow {
-        animation: glow 2s ease-in-out infinite alternate;
+      animation: glow 2s ease-in-out infinite alternate;
     }
 
     /* Bouncing Button Effect */
     @keyframes bounce {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-5px); }
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
     }
     .animate-bounce {
-        animation: bounce 1.5s infinite;
+      animation: bounce 1.5s infinite;
     }
     @keyframes spinSlow {
       0% {
@@ -100,6 +111,14 @@
             </li>
             <li>
               <a
+                href="./experience.html"
+                class="hover:text-yellow-400 transition duration-300 ease-in-out transform hover:scale-110"
+              >
+               📁 Experience
+              </a>
+            </li>
+            <li>
+              <a
                 href="./contact.html"
                 class="hover:text-yellow-400 transition duration-300 ease-in-out transform hover:scale-110"
               >
@@ -111,43 +130,63 @@
       </div>
     </header>
 
-    <section class="flex flex-col md:flex-row items-center justify-between mt-20 px-10">
-        <!-- Left Side: Profile Image -->
-        <div class="relative">
-            <img src="itonimage.jpg" alt="Profile Image" 
-                class="w-60 h-60 rounded-full border-8 border-yellow-400 shadow-xl transition-transform transform hover:scale-105 animate-spin-slow">
-        </div>
-    
-        <!-- Right Side: Title & Role -->
-        <div class="text-right md:ml-10">
-            <h2 class="text-3xl font-extrabold text-yellow-400 animate-glow">Web Developer & Programmer</h2>
-        </div>
+    <section
+      class="flex flex-col md:flex-row items-center justify-between mt-20 px-10"
+    >
+      <!-- Left Side: Profile Image -->
+      <div class="relative">
+        <img
+          src="itonimage.jpg"
+          alt="Profile Image"
+          class="w-60 h-60 rounded-full border-8 border-yellow-400 shadow-xl transition-transform transform hover:scale-105 animate-spin-slow"
+        />
+      </div>
+
+      <!-- Right Side: Title & Role -->
+      <div class="text-right md:ml-10">
+        <h2 class="text-3xl font-extrabold text-yellow-400 animate-glow">
+          Web Developer & Programmer
+        </h2>
+      </div>
     </section>
-    
-    <section class="flex flex-col md:flex-row items-center justify-between mt-10 px-10">
-        <!-- Left Side: Summary Text -->
-        <div class="md:w-1/2 text-left text-lg text-gray-300 transform transition duration-500 hover:scale-105" style="color: aqua;">
-            <p class="mb-3">
-                Skilled in <strong>MERN Stack, C++, JavaScript</strong>, and backend architecture. Always eager to explore new technologies and optimize system performance.
-            </p>
-            <p class="mb-3">
-                Dedicated to developing efficient and user-friendly applications that improve digital experiences.
-            </p>
-        </div>
+
+    <section
+      class="flex flex-col md:flex-row items-center justify-between mt-10 px-10"
+    >
+      <!-- Left Side: Summary Text -->
+      <div
+        class="md:w-1/2 text-left text-lg text-gray-300 transform transition duration-500 hover:scale-105"
+        style="color: aqua"
+      >
+        <p class="mb-3">
+          Skilled in <strong>MERN Stack, C++, JavaScript</strong>, and backend
+          architecture. Always eager to explore new technologies and optimize
+          system performance.
+        </p>
+        <p class="mb-3">
+          Dedicated to developing efficient and user-friendly applications that
+          improve digital experiences.
+        </p>
+      </div>
     </section>
     <!-- Footer Section -->
-<footer class="bg-gray-900 text-white py-6 mt-10">
-    <div class="container mx-auto text-center">
+    <footer class="bg-gray-900 text-white py-6 mt-10">
+      <div class="container mx-auto text-center">
         <div>
-            <a href="./sumit..pdf" download class="px-6 py-3 bg-yellow-500 text-gray-900 font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition transform hover:scale-110 animate-bounce">
-                📄 Download Resume
-            </a>
+          <a
+            href="./sumit..pdf"
+            download
+            class="px-6 py-3 bg-yellow-500 text-gray-900 font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition transform hover:scale-110 animate-bounce"
+          >
+            📄 Download Resume
+          </a>
         </div>
-        
-        <!-- Copyright -->
-        <p class="text-sm text-gray-400 mt-4">© 2025 Sumit Kumar | All Rights Reserved</p>
-    </div>
-</footer>
 
+        <!-- Copyright -->
+        <p class="text-sm text-gray-400 mt-4">
+          © 2025 Sumit Kumar | All Rights Reserved
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
