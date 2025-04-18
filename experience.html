@@ -21,14 +21,12 @@
         }
 
         .experience-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap; /* Ensures responsiveness */
+            text-align: center;
             margin-top: 30px;
-            gap: 20px; /* Adds space between cards */
         }
 
         .experience-card {
+            display: inline-block;
             background: linear-gradient(135deg, #4f46e5, #7c3aed);
             color: white;
             padding: 30px;
@@ -36,7 +34,9 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             width: 300px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 10px;
             text-align: center;
+            vertical-align: top;
         }
 
         .experience-card:hover {
@@ -106,5 +106,6 @@
     
 </body>
 </html>
+
 
 
